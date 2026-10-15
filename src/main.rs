@@ -24,7 +24,7 @@ fn main() {
         .expect("Cannot create audio sink");
     let handle = builder
         .with_sample_rate(NonZero::new(SAMPLE_RATE_48K).unwrap())
-        , features = ["pipewire"] }.with_buffer_size(BufferSize::Default)
+        .with_buffer_size(BufferSize::Default)
         .open_stream().unwrap();
     println!("debug");
     // build a basic mixer player and a queue 
