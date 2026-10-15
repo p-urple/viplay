@@ -1,0 +1,10 @@
+[package]
+name = "viplay"
+version = "0.1.0"
+authors = ["Violet"]
+description = "A simple music player project I started to learn the rust language"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+rodio = "0.23.0"
